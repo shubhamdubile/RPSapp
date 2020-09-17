@@ -14,11 +14,15 @@ function App() {
   const [you, setYou] = useState("Congratulation You Won");
   const [lost, setLost] = useState("Sorry you Lost Better Luck Next Time");
   const [wrong, setWrong] = useState("Please select Your Choice First");
+  
+  const computerChoice = () => {
+    setComputer(weapons[Math.floor(Math.random() * weapons.length)]);
+  };
 
   const start = (event) => {
     event.preventDefault();
 
-    setComputer(weapons[Math.floor(Math.random() * weapons.length)]);
+    // setComputer(weapons[Math.floor(Math.random() * weapons.length)]);
 
     if (weapon === null) {
       setWinner(wrong);
@@ -86,25 +90,28 @@ function App() {
           >
             Scissor
           </Button>
-        </div>
-        <div className="app__score">
-          <table className="app__bordertable">
-            <tr>
-              <th>Your Choice</th>
-              <th>Computer Choice</th>
-            </tr>
-            <tr>
-              <td>{weapon}</td>
-              <td>{computer}</td>
+<Button variant="outlined" size="large" onClick={computerChoice}>
+          Computer Choice
+        </Button>
 
-              {/* <td>shubham</td>
-              <td>shubham</td> */}
-            </tr>
-          </table>
         </div>
-        <div className="app__score">
-          <h1>{winner}</h1>
-        </div>
+
+//         <div className="app__score">
+//           <table className="app__bordertable">
+//             <tr>
+//               <th>Your Choice</th>
+//               <th>Computer Choice</th>
+//             </tr>
+//             <tr>
+//               <td>{weapon}</td>
+//               <td>{computer}</td>
+
+//               {/* <td>shubham</td>
+//               <td>shubham</td> */}
+//             </tr>
+//           </table>
+//         </div>
+        
         <div className="app__score">
           <div>
             <Button variant="outlined" size="large" onClick={start}>
@@ -114,6 +121,9 @@ function App() {
               Restart
             </Button>
           </div>
+        </div>
+<div className="app__score">
+          <h1>{winner}</h1>
         </div>
       </div>
     </div>
