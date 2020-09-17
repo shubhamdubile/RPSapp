@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
 import "./App.css";
 
-const weapons = ["Rock", "Paper", "Scissors"];
+const weapons = ["Rock", "Paper", "Scissor"];
 
 function App() {
   const [winner, setWinner] = useState();
@@ -26,8 +26,8 @@ function App() {
     } else if (weapon === computer) {
       setWinner(tie);
     } else if (
-      (weapon === "Rock" && computer === "Scissors") ||
-      (weapon === "Scissors" && computer === "Paper") ||
+      (weapon === "Rock" && computer === "Scissor") ||
+      (weapon === "Scissor" && computer === "Paper") ||
       (weapon === "Paper" && computer === "Rock")
     ) {
       setWinner(you);
