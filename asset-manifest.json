@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/RPSapp/static/css/main.fe709b1b.chunk.css",
+    "main.js": "/RPSapp/static/js/main.304e5188.chunk.js",
+    "main.js.map": "/RPSapp/static/js/main.304e5188.chunk.js.map",
+    "runtime-main.js": "/RPSapp/static/js/runtime-main.74883bc6.js",
+    "runtime-main.js.map": "/RPSapp/static/js/runtime-main.74883bc6.js.map",
+    "static/js/2.7a9d85a6.chunk.js": "/RPSapp/static/js/2.7a9d85a6.chunk.js",
+    "static/js/2.7a9d85a6.chunk.js.map": "/RPSapp/static/js/2.7a9d85a6.chunk.js.map",
+    "index.html": "/RPSapp/index.html",
+    "precache-manifest.9a99cbefd6db2948d10d3f05e18dc085.js": "/RPSapp/precache-manifest.9a99cbefd6db2948d10d3f05e18dc085.js",
+    "service-worker.js": "/RPSapp/service-worker.js",
+    "static/css/main.fe709b1b.chunk.css.map": "/RPSapp/static/css/main.fe709b1b.chunk.css.map",
+    "static/js/2.7a9d85a6.chunk.js.LICENSE.txt": "/RPSapp/static/js/2.7a9d85a6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74883bc6.js",
+    "static/js/2.7a9d85a6.chunk.js",
+    "static/css/main.fe709b1b.chunk.css",
+    "static/js/main.304e5188.chunk.js"
+  ]
+}
